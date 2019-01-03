@@ -5,3 +5,6 @@ insert into users (id, login_name, password_hash, role_name) values (-3, 'admin'
 insert into books (id, title, isbn, author, year) values (-4, 'Gone with the Wind', 'book1', 'Margaret Mitchell', 1936)
 insert into books (id, title, isbn, author, year) values (-5, 'Ruslan and Ludmila', 'book2', ' Alexander Pushkin', 1820)
 insert into books (id, title, isbn, author, year) values (-6, 'The Notebook', 'book3', 'Nicholas Sparks', 1996)
+
+
+
