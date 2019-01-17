@@ -6,5 +6,5 @@ insert into books (id, title, isbn, author, year) values (-4, 'Gone with the Win
 insert into books (id, title, isbn, author, year) values (-5, 'Ruslan and Ludmila', 'book2', ' Alexander Pushkin', 1820)
 insert into books (id, title, isbn, author, year) values (-6, 'The Notebook', 'book3', 'Nicholas Sparks', 1996)
 
-
+insert into reservations (id, user_id, book_id, status, created) values (-1, -1, -4, 'TAKEN', '2019-01-17')
 

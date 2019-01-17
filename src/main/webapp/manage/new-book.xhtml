@@ -8,36 +8,36 @@
 
         <h:form>
 
-            <ui:fragment rendered="#{createNewBean.created}">
+            <ui:fragment rendered="#{newBookBean.created}">
                 <h2>Book was created successfully!</h2>
             </ui:fragment>
 
             <p>
                 <h:outputLabel value="Title:"/>
-                <h:inputText id="title" value="#{createNewBean.book.title}"/>
+                <h:inputText id="title" value="#{newBookBean.book.title}"/>
                 <h:messages for="title"/>
             </p>
             <p>
                 <h:outputLabel value="Author:"/>
-                <h:inputText id="author" value="#{createNewBean.book.author}"/>
+                <h:inputText id="author" value="#{newBookBean.book.author}"/>
                 <h:messages for="author"/>
             </p>
             <p>
                 <h:outputLabel value="ISBN:"/>
-                <h:inputText id="isbn" value="#{createNewBean.book.isbn}"/>
+                <h:inputText id="isbn" value="#{newBookBean.book.isbn}"/>
                 <h:messages for="isbn"/>
             </p>
             <p>
                 <h:outputLabel value="Year:"/>
-                <h:inputText id="year" value="#{createNewBean.book.year}"/>
+                <h:inputText id="year" value="#{newBookBean.book.year}"/>
                 <h:messages for="year"/>
             </p>
             <p>
                 <h:outputLabel value="Description:"/> <br/>
-                <h:inputTextarea value="#{createNewBean.book.description}"/>
+                <h:inputTextarea value="#{newBookBean.book.description}"/>
             </p>
             <p>
-                <h:commandButton action="#{createNewBean.createBook}" value="Create">
+                <h:commandButton action="#{newBookBean.createBook}" value="Create">
                     <f:ajax render="@form" execute="@form"/>
                 </h:commandButton>
             </p>
