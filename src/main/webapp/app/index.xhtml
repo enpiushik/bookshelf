@@ -21,27 +21,27 @@
             </h:commandButton>
 
             <h:outputLabel value="not found" rendered="#{empty booksListBean.books}"/>
-            <h:dataTable value="#{booksListBean.books}" var="book" rendered="#{not empty booksListBean.books}">
+            <h:dataTable value="#{booksListBean.books}" var="res" rendered="#{not empty booksListBean.books}">
                 <h:column>
                     <f:facet name="header">ID</f:facet>
-                    #{book.id}
+                    #{res.id}
                 </h:column>
                 <h:column>
                     <f:facet name="header">Title</f:facet>
-                    #{book.title}
+                    #{res.title}
                 </h:column>
                 <h:column>
                     <f:facet name="header">Author</f:facet>
-                    #{book.author}
+                    #{res.author}
                 </h:column>
                 <h:column>
                     <f:facet name="header">Year</f:facet>
-                    #{book.year}
+                    #{res.year}
                 </h:column>
                 <h:column>
                     <f:facet name="header">Link</f:facet>
                     <h:outputLink value="book.xhtml">open
-                        <f:param name="id" value="#{book.id}"/>
+                        <f:param name="id" value="#{res.id}"/>
                     </h:outputLink>
                 </h:column>
             </h:dataTable>
