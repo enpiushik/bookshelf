@@ -15,10 +15,12 @@
         <h1>Welcome to our library!</h1>
 
         <h:form>
+            <p>
             <h:inputText value="#{booksListBean.term}"/>
             <h:commandButton value="search" action="#{booksListBean.doSearch}">
                 <f:ajax execute="@form" render="@form"/>
             </h:commandButton>
+            </p>
 
             <h:outputLabel value="not found" rendered="#{empty booksListBean.books}"/>
             <h:dataTable value="#{booksListBean.books}" var="res" rendered="#{not empty booksListBean.books}">

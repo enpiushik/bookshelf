@@ -34,9 +34,11 @@
                 <td>#{bookBean.book.description}</td>
             </tr>
         </table>
+        <p>
         <h:form>
             <h:commandButton value="Reserve for me" action="#{bookReservationBean.reserve(bookBean.id)}"/>
         </h:form>
+        </p>
     </ui:define>
 </ui:composition>
 
